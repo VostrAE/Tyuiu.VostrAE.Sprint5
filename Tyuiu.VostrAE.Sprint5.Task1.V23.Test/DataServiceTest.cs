@@ -1,6 +1,4 @@
-﻿using Tyuiu.VostrAE.Sprint5.Task1.V2.Lib;
-using System.IO;
-namespace Tyuiu.VostrAE.Sprint5.Task1.V2.Test
+﻿namespace Tyuiu.VostrAE.Sprint5.Task1.V23.Test
 {
     [TestClass]
     public sealed class DataServiceTest
@@ -8,7 +6,7 @@ namespace Tyuiu.VostrAE.Sprint5.Task1.V2.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = @"C:\Users\vostr\AppData\Local\Temp\OutPutFileTask0.txt";
+            string path = @"C:\Users\vostr\AppData\Local\Temp\OutPutFileTask1.txt";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             bool wait = true;

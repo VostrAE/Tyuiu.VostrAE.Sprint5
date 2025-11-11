@@ -1,6 +1,6 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint5;
 using System.IO;
-namespace Tyuiu.VostrAE.Sprint5.Task0.V2.Lib
+namespace Tyuiu.VostrAE.Sprint5.Task1.V2.Lib
 {
     public class DataService : ISprint5Task0V2
     {
