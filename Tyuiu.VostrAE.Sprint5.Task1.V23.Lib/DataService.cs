@@ -20,11 +20,11 @@ namespace Tyuiu.VostrAE.Sprint5.Task1.V23.Lib
             string strY;
             for (int x = startValue; x <= stopValue; x++)
             {
-                if (x + 2 == 0) { y = 0; strY = Convert.ToString(Math.Round(y, 3)); }
+                if (x + 2 == 0) { y = 0; strY = Convert.ToString(Math.Round(y, 2)); }
                 else
                 {
                     y = Math.Cos(x) + (Math.Cos(x) / (x + 2)) - 3 * x;
-                    strY = Convert.ToString(Math.Round(y, 3));
+                    strY = Convert.ToString(Math.Round(y, 2));
                 }
 
                 if (x != stopValue)
