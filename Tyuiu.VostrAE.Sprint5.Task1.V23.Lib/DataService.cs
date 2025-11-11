@@ -21,11 +21,12 @@ namespace Tyuiu.VostrAE.Sprint5.Task1.V23.Lib
             for (int x = startValue; x <= stopValue; x++)
             {
                 if (x + 2 == 0) { y = 0; strY = Convert.ToString(Math.Round(y, 3)); }
-                else {
-                    y =Math.Cos(x)+(Math.Cos(x)/(x+2))-3*x;
-                    strY = Convert.ToString(Math.Round(y,3));
+                else
+                {
+                    y = Math.Cos(x) + (Math.Cos(x) / (x + 2)) - 3 * x;
+                    strY = Convert.ToString(Math.Round(y, 3));
                 }
-            
+
                 if (x != stopValue)
                 {
                     File.AppendAllText(path, strY + Environment.NewLine);
@@ -33,7 +34,7 @@ namespace Tyuiu.VostrAE.Sprint5.Task1.V23.Lib
                 else
                 {
                     File.AppendAllText(path, strY);
-                }  
+                }
             }
             return path;
         }
