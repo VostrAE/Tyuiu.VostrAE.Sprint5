@@ -14,15 +14,19 @@ namespace Tyuiu.VostrAE.Sprint5.Task5.V9.Lib
                 {
                     foreach (string x in line.Split(" "))
                     {
-                        double z = Math.Round(Convert.ToDouble(x.Replace(".", ",")),3);
-                        if (z > res) { res = z; }
+                        double z = Convert.ToDouble(x.Replace(".", ","));
+                        if (z == Math.Truncate(z))
+                        {
+                            if (z > res)  { res = z;}
+                        }
                     }
+                   
                 }
                 return res;
-
             }
         }
     }
 }
+        
 
 

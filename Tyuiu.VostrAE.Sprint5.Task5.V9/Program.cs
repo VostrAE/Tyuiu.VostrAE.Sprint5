@@ -16,7 +16,7 @@ class Program
         Console.WriteLine(" Результат:                                                               *");
         Console.WriteLine("***************************************************************************");
         double res = ds.LoadFromDataFile(path);
-        Console.WriteLine("Максимальное значение в файле " + res);
+        Console.WriteLine("Максимальное значение в файле: " + res);
         Console.WriteLine("Создан! ");
         Console.ReadKey();
     }
