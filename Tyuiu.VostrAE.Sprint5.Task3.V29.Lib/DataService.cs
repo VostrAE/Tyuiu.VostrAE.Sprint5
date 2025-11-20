@@ -17,7 +17,7 @@ namespace Tyuiu.VostrAE.Sprint5.Task3.V29.Lib
                 File.Delete(path);
             }
 
-            double z = Math.Round(Math.Pow(x,3)+ Math.Pow(2*x, 2)+5*x+4, 3);
+            double z = Math.Round(Math.Pow(x,3)+ 2*Math.Pow(x, 2)+5*x+4, 3);
             using (BinaryWriter writer = new BinaryWriter(File.Open(path, FileMode.OpenOrCreate), Encoding.UTF8)) 
             {writer.Write(BitConverter.GetBytes(z)); }
             return path;
