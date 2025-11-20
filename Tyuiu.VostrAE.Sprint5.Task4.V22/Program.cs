@@ -1,6 +1,6 @@
 ﻿using System;
 using Tyuiu.VostrAE.Sprint5.Task4.V22.Lib;
-class program
+class Program
 {
     static void Main(string[] args)
     {
