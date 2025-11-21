@@ -2,9 +2,9 @@
 using tyuiu.cources.programming.interfaces.Sprint5;
 namespace Tyuiu.VostrAE.Sprint5.Task6.V18.Lib
 {
-    public class DataService : ISprint5Task5V18
+    public class DataService : ISprint5Task6V18
     {
-        public double LoadFromDataFile(string path)
+        public int LoadFromDataFile(string path)
         {
             int count = 0;
             using (StreamReader reader = new StreamReader(path))
@@ -15,15 +15,14 @@ namespace Tyuiu.VostrAE.Sprint5.Task6.V18.Lib
                     foreach (string x in line.Split(" "))
                         if (int.TryParse(x, out int z))
                         {
-                            if ((z >= 0) && (z <= 9)) { 
-                                count++; 
+                            if ((z >= 0) && (z <= 9))
+                            {
+                                count++;
                             }
-
-                    }
+                        }
                 }
+                return count;
             }
-            return count;
         }
     }
 }
-
